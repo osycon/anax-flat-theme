@@ -3,19 +3,24 @@
 */
 @import url(modules.less);
 
-
-
 /** --------------------------------------------------------------
  *  Logo images
  */
 .logo-1 {
-    position: absolute;
-    top: 70px;
-    left: -140px;
+  position: absolute;
+  top: 70px;
+  left: -140px;
+  display: none;
 }
 
 .site-logo-text-icon {
-    img {
-        vertical-align: bottom;
-    }
+  img {
+    vertical-align: bottom;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .logo-1 {
+    display: block;
+  }
 }
