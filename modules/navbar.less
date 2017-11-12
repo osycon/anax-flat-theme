@@ -1,3 +1,15 @@
 .navbar2 {
-  background: @primary-color;
+  display: none;
+  margin-left: 2em;
+  & li {
+    .border(0, @secondary-color-dark, 1px, solid);
+    &:hover,
+    &:active {
+      background: @secondary-color-dark;
+      color: @secondary-font-color;
+      & a {
+        text-decoration: none;
+      }
+    }
+  }
 }
