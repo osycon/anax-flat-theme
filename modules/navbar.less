@@ -4,9 +4,13 @@
   & li {
     background: @secondary-color;
     color: @secondary-font-color;
+    & a {
+      padding: 0;
+      margin: 1.5em;
+    }
     &:hover,
     &:active {
-      .border-bottom(0, @secondary-color-dark, 2px, solid);
+      .border-bottom(0, @secondary-color-dark, @borderSizeH1, solid);
       & a {
         text-decoration: none;
       }

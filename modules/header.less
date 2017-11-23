@@ -1,12 +1,16 @@
 .site-header {
-  background-color: @secondary-color-light;
-  height: 80px;
+  // background-color: @secondary-color-light;
+  height: @magicNumber * 3;
 }
-.flash-wrap img {
-  max-width: 100%;
+.flash-wrap {
+  height: @magicNumber * 8;
+  & img {
+    max-width: 100%;
+  }
 }
+
 .site-logo-text {
-  font-size: 1.5em;
+  // font-size: @fontSizeBody;
   & a {
     text-decoration: none;
     color: @primary-font-color;
