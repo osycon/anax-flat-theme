@@ -1,7 +1,11 @@
+.outer-wrap-header,
+.outer-wrap-flash,
+.outer-wrap-breadcrumb {
+  background-color: @primary-color;
+}
 .site-header {
   height: @magicNumber * 3;
   position: relative;
-  background-color: @primary-color;
 }
 .flash-wrap {
   & img {
@@ -12,10 +16,9 @@
 .site-logo-text {
   & a {
     text-decoration: none;
-    color: @primary-font-color;
+    color: @link-font-color;
     &:hover {
-      background: @primary-color-dark;
-      color: @secondary-font-color;
+      color: @primary-font-color;
     }
   }
 }

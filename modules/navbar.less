@@ -2,13 +2,14 @@
   display: none;
   & li {
     background: @primary-color;
-    color: @secondary-font-color;
+    color: @link-font-color;
     & a {
       padding: 0;
       margin: 1.5em;
     }
     &:hover,
     &:active {
+      background: @primary-color-light;
       .border-bottom(0, @primary-color-dark, @borderSizeH1, solid);
       & a {
         text-decoration: none;
