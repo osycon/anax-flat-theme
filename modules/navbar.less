@@ -1,8 +1,7 @@
 .navbar2 {
   display: none;
-  // margin-left: 2em;
   & li {
-    background: @secondary-color;
+    background: @primary-color;
     color: @secondary-font-color;
     & a {
       padding: 0;
@@ -10,7 +9,7 @@
     }
     &:hover,
     &:active {
-      .border-bottom(0, @secondary-color-dark, @borderSizeH1, solid);
+      .border-bottom(0, @primary-color-dark, @borderSizeH1, solid);
       & a {
         text-decoration: none;
       }

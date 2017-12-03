@@ -34,10 +34,11 @@
 .outer-wrap-header,
 .outer-wrap-main,
 .footer-column-wrapper {
-  margin-bottom: @magicNumber;
+  padding-bottom: @magicNumber;
 }
 
 .site-header {
+  // .row();
   .column(@columns);
 }
 
@@ -70,6 +71,12 @@
 }
 .footer {
   .column(@columns);
+  & ul {
+    padding-left: 0;
+  }
+  & li {
+    list-style: none;
+  }
 }
 .footer-column {
   .column(@columns / 3);
@@ -78,11 +85,16 @@
 .site-footer {
   .column(@columns);
   text-align: center;
-  li {
-    list-style: none;
-  }
 }
 
 .outer-wrap.outer-wrap-footer {
-  background-color: @secondary-color-light;
+  background-color: @primary-color;
+}
+
+.outer-wrap-main {
+  background-color: @primary-color;
+}
+
+.inner-wrap-main {
+  background-color: @primary-color-light;
 }
