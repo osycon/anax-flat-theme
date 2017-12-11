@@ -38,7 +38,6 @@
 }
 
 .site-header {
-  // .row();
   .column(@columns);
 }
 
@@ -56,6 +55,9 @@
 .sidebar-left{
   .column(3);
 }
+.sidebar-right {
+  .column(3);
+}
 .main {
   .column((@columns / 12) * 10);
   .push((@columns / 12) * 1);
@@ -63,6 +65,9 @@
     .column((@columns / 4) * 3);
     .push(0);
     .pull-right(3);
+  }
+  &.has-sidebar-right {
+    .column((@columns / 4) * 3);
   }
 }
 
